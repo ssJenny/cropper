@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/cropper.css">
+  <link rel="stylesheet" href="css/demo.css">
+  <title>Cropper</title>
+</head>
+<body>
+<div class="cover-wrapper">
+
+  <div class="container">
+    <div class="img-container">
+      <img src="images/picture.jpg" alt="Picture">
+    </div>
+    <div class="btn-container clearfloat">
+      <div class="btn-group">
+        <button type="button" class="btn btn-primary" data-method="reset" title="Reset">
+
+          上传
+        </button>
+        <label class="btn btn-primary btn-upload" for="inputImage" title="Upload image file">
+          <input type="file" class="sr-only" id="inputImage"  name="file" accept=".jpg,.jpeg,.png,.gif,.bmp,.tiff">
+          <span class="docs-tooltip" data-toggle="tooltip" title="Import image with Blob URLs">
+              <span class="fa fa-upload"></span>
+            </span>
+        </label>
+        <button id="confirmBtn" type="button" class="btn btn-primary" data-method="destroy" title="Destroy">
+          确定
+
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+</body>
+<script src="js/cropper.js"></script>
+<script src="js/demo.js"></script>
+
+</html>
